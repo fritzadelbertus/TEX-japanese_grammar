@@ -1,0 +1,42 @@
+% ===== Setup Page Layout =====
+\documentclass{article}
+\usepackage{geometry}
+ \geometry{
+ a5paper,
+ total={12cm, 16cm},
+ }
+\usepackage{graphicx}
+\usepackage{CJKutf8}
+\input{packages.tex}
+
+\title{Grammar Jepang}
+\author{Fritz Adelbertus Sitindaon}
+\date{}
+
+\begin{document}
+% ===== Cover =====
+\begin{center}
+    \textbf{\HUGE{GRAMMAR JEPANG}}
+
+    \vspace{0.5cm}
+    \textbf{\Large Fritz Adelbertus Sitindaon}
+
+    \vspace{7cm}
+    \scalebox{10}{\begin{CJK}{UTF8}{ipxm}日本語\end{CJK}}
+\end{center}
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents
+\begin{CJK}{UTF8}{ipxm}
+\include{days/day_1}
+
+田舎に派遣されました。
+\section*{日本語}
+\end{CJK}
+\begin{thebibliography}{9}
+\bibitem{valberg}
+Valberg, D., Purcel, E.J., Rigdon, S.E., (2006). \emph{Calculus}, Prentice Hall, 9th ed.
+\end{thebibliography}
+
+\end{document}
